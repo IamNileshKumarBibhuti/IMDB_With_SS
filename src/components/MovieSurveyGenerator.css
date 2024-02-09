@@ -1,0 +1,82 @@
+/* MovieSurveyGenerator.css */
+.survey-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    /* Increased gap for better spacing */
+    padding: 2rem;
+    /* Increased padding for a more spacious layout */
+    border-radius: 12px;
+    /* Slightly larger border-radius for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* More pronounced shadow for depth */
+    background-color: #fff;
+    /* Added a background color for contrast */
+    max-width: 500px;
+    /* Max-width to prevent the form from being too wide on large screens */
+    margin: 2rem auto;
+    /* Center the form on the page with some margin */
+}
+
+.survey-input {
+    width: 100%;
+    /* Ensure the input takes the full width of its container */
+    padding: 0.75rem;
+    /* Slightly larger padding for better touch targets */
+    border-radius: 6px;
+    /* Softer corners */
+    border: 2px solid #007bff;
+    /* Thicker border with a color that matches the button */
+    font-size: 1rem;
+    /* Increased font size for readability */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+.survey-button {
+    padding: 0.75rem 1.5rem;
+    /* More padding for a larger button */
+    border-radius: 6px;
+    /* Softer corners */
+    background-color: #007bff;
+    /* Primary button color */
+    color: white;
+    font-size: 1rem;
+    /* Matching font size with input */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+    outline: none;
+    /* Remove outline to clean up focus state, consider custom focus styles for accessibility */
+}
+
+.survey-button:hover,
+.survey-button:focus {
+    background-color: #0056b3;
+    /* Darker shade on hover/focus for interaction feedback */
+}
+
+.survey-button:active {
+    transform: translateY(2px);
+    /* Slight push effect on click */
+    box-shadow: none;
+    /* Optionally remove shadow on click for a 'pressed' effect */
+}
+
+.survey-question {
+    text-align: center;
+    /* Center-align the questions for better readability */
+    padding: 0.5rem 1rem;
+    /* Padding around questions for spacing */
+    border-radius: 4px;
+    /* Soften the edges of the question elements */
+    background-color: #f8f9fa;
+    /* Light background for each question to distinguish them */
+    width: 100%;
+    /* Full width to align with the input */
+    box-sizing: border-box;
+    /* Include padding in the element's total width */
+    margin-bottom: 0.5rem;
+    /* Space between questions */
+}
